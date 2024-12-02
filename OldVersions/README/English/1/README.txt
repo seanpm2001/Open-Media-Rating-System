@@ -1,295 +1,141 @@
 
 ***
 
-# <projectName>
+## Open Media Rating System (OMRS)
 
-![{Project icon} This image failed to load. It may be due to the file not being reached, or a general error. Reload the page to fix a possible general error.](Image.svg)
+Version 1.01 - 2024, Tuesday, November 12th at 08:58 pm PST
 
-# By:
+The Open Media Rating System (OMRS) is a free, libre, and open source, public domain alternative to the MPAA and ESRB rating systems. It was created due to the unfree and highly restrictive nature of the MPAA rating system and ESRB rating system, both of which require Trademark compliance with some very bad actors. By having a less restrictive rating system, it is hoped that it will be free, more effective, and more friendly.
 
-![{Developer name} This image failed to load. It may be due to the file not being reached, or a general error. Reload the page to fix a possible general error.](Image2.svg)
+The rating system will be federated by default (it is encouraged that federated sites (similar in nature to Mastodon) can rate content, and host ratings) ratings can be registered by special groups of federated sites. Due to the more open nature of this system, others can register ratings as well, even if they are not federated.
 
-### Top
+A separate official database will also be available in a separate repository, which will be GPL3 licensed. Other databases can also be used too, there will be more than 1 official database.
 
-# `README.md`
+Media types (8 groups)
 
-***
+```
+🕹️ VG - Video Game
+💾️ SO - Software/other
+🎞️ FL - Film/movie
+🖼️ SI - Still image/picture
+🎵️ AU - Audio/music
+📔️ DO - Document/book/manual/text
+🐽️ OD - Odor/smell
+❓️ OT - Other/undefined
+```
 
-## Read this article in a different language
+Note: Other/undefined is reserved for new media types that currently don't exist.
 
-[ar عربى](README_AR.md) [zh-t 中國傳統的）](README_ZH-T.md)[**en-us**](README.md) [fr français](README_FR.md) [de Deutsch](README_DE.md) [EO Esperanto](README_EO.md)  [ja 日本語](README_JA.md) [ko-south 韓國語](README_KO_SOUTH.md) [pl polski](README_PL.md) [ru русский](README_RU.md) [es en español](README_ES.md)
+Discretion notes (12 tags)
+
+TODO: Differentiate this from trigger warnings
 
-Translations in languages other than English are machine translated and are not yet accurate. No errors have been fixed yet as of March 21st 2021. Please report translation errors [here](https://github.com/seanpm2001/<repoName>/issues/). Make sure to backup your correction with sources and guide me, as I don't know languages other than English well (I plan on getting a translator eventually) please cite [wiktionary](https://en.wiktionary.org) and other sources in your report. Failing to do so will result in a rejection of the correction being published.
+- Contains strobing lights
+- Contains mild violence
+- Contains existential thoughts
+- Contains references to drugs
+- Contains drugs
+- Contains mild swearing
+- Contains mild slur usage
+- Contains innuendos
+- Contains mild sexual humor
+- Contains sexual humor
+- Contains softcore sexual material
+- Contains hardcore sexual material
+- WIP
 
-***
+Minimum age ratings (8 groups)
 
-# Index
+✅️ 0-3
+✅️ 3-6
+☑️ 6-9
+⚠️ 9-12
+⚠️ 12-15
+⛔️ 15-18
+🔞️ 18-21
+🔞️ 21+
 
-[00.0 - Top](#Top)
+Note: age ratings are on a basis of maturity. People of different ages should be able to watch what they want, as long as they know what to repeat, what not to repeat, and what is morally good and/or bad, with the exception of gore and sex, which should be restricted to certain ages in most cases. TL;DR: viewer discretion is advised
 
-> [00.1 - Title](#<projectName>)
+Trigger warnings (? tags)
 
-> [00.2 - Read this article in a different language](#Read-this-article-in-a-different-language)
+To be defined
 
-> [00.3 - Index](#Index)
+Counters (4 counters)
 
-[01.0 - Description](#RepositoryName)
+Swear count
+Slur count
+Insult count
+Innuendo count
+etc
 
-[02.0 - About](#About)
+Additional flags
 
-[03.0 - Wiki](#Wiki)
+May be merged with V7Tags
 
-[04.0 - Version history](#Version-history)
+- [ ] Contains mild gore
+- [ ] Contains gore
+- [ ] Contains mild swearing
+- [ ] Contains swearing
+- [ ] Contains excessive swearing
+- [ ] Contains slurs
+- [ ] Contains hate speech (intended for content in a historical setting)
+- [ ] Contains threats (intended for content in a historical setting)
+- [ ] Contains racism (intended for content in a historical setting)
+- [ ] Contains sexism (intended for content in a historical setting)
+- [ ] Contains political content
+- [ ] Contains physical abuse
+- [ ] Contains verbal abuse
+- [ ] Contains sexual humor
+- [ ] Contains sexual imagery
+- [ ] Contains sexual intercourse
 
-[05.0 - Software status](#Software-status)
+Note: sexual acts that are not involving intercourse are considered softcore, while sexual intercourse is considered hardcore. Hardcore is always 18+ while softcore can sometimes be allowed in the 12-15 or 15-18 and up categories (normally in a historical or artistic setting, such as the Statue of David, Florence, Italy, and similar uses in academic and artistic nature)
 
-[06.0 - Sponsor info](#Sponsor-info)
+SVG symbols for ratings:
 
-[07.0 - Contributers](#Contributers)
+Coming soon
 
-[08.0 - Issues](#Issues)
+Languages:
 
-> [08.1 - Current issues](#Current-issues)
+English
+More coming soon
 
-> [08.2 - Past issues](#Past-issues)
+It is encouraged to start this system off by rating public domain, or content licensed under a public domain compatible Creative Commons license (such as CC-0)
 
-> [08.3 - Past pull requests](#Past-pull-requests)
+License: Unlicense
 
-> [08.4 - Active pull requests](#Active-pull-requests)
+```license-text:plain-text
+This is free and unencumbered software released into the public domain.
 
-[09.0 - Resources](#Resources)
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
 
-[10.0 - Contributing](#Contributing)
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
 
-[11.0 - About README](#About-README)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
 
-[12.0 - README Version history](#README-version-history)
+For more information, please refer to <http://unlicense.org>
+```
 
-[13.0 - Footer](#You-have-reached-the-end-of-the-README-file)
+This is going to be pushed out into its own separate repository once ready.
 
-> [13.1 - End of file](#EOF)
+Related projects:
 
-***
-
-# <repoName>
-<repo_description>
-
-***
-
-## About
-
-See above. <extendedRepoDescription>
-
-***
-
-## Wiki
-
-[Click/tap here to view this projects Wiki](https://github.com/seanpm2001/<repoName>/wiki)
-
-If the project has been forked, the Wiki was likely removed. Luckily, I include an embedded version. You can view it [here](/External/ProjectWiki/).
-
-***
-
-## Sponsor info
-
-![SponsorButton.png](SponsorButton.png)
-
-You can sponsor this project if you like, but please specify what you want to donate to. [See the funds you can donate to here](https://github.com/seanpm2001/Sponsor-info/tree/main/For-sponsors)
-
-You can view other sponsor info [here](https://github.com/seanpm2001/Sponsor-info/)
-
-Try it out! The sponsor button is right up next to the watch/unwatch button.
-
-***
-
-## Version history
-
-**Version history currently unavailable**
-
-**No other versions listed**
-
-***
-
-## Software status
-
-All of my works are free some restrictions. DRM (**D**igital **R**estrictions **M**anagement) is not present in any of my works.
-
-![DRM-free_label.en.svg](DRM-free_label.en.svg)
-
-This sticker is supported by the Free Software Foundation. I never intend to include DRM in my works.
-
-I am ussing the abbreviation "Digital Restrictions Management" instead of the more known "Digital Rights Management" as the common way of addressing it is false, there are no rights with DRM. The spelling "Digital Restrictions Management" is more accurate, and is supported by [Richard M. Stallman (RMS)](https://en.wikipedia.org/wiki/Richard_Stallman) and the [Free Software Foundation (FSF)](https://en.wikipedia.org/wiki/Free_Software_Foundation)
-
-This section is used to raise awareness for the problems with DRM, and also to protest it. DRM is defective by design and is a major threat to all computer users and software freedom.
-
-Image credit: [defectivebydesign.org/drm-free/...](https://www.defectivebydesign.org/drm-free/how-to-use-label)
-
-***
-
-## Contributers
-
-Currently, I am the only contributer. Contributing is allowed, as long as you follow the rules of the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-> * 1. [seanpm2001](https://github.com/seanpm2001/) - x commits (As of DoW, Month, DoM, Yr at ##:## a/pm)
-
-> * 2. No other contributers.
-
-***
-
-## Issues
-
-### Current issues
-
-* None at the moment
-
-* No other current issues
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Past issues
-
-* None at the moment
-
-* No other past issues
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Past pull requests
-
-* None at the moment
-
-* No other past pull requests
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Active pull requests
-
-* None at the moment
-
-* No other active pull requests
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-***
-
-## Resources
-
-Here are some other resources for this project:
-
-[Project language file](PROJECT_LANG.<fileExtensionForProgrammingLanguage>)
-
-[Join the discussion on GitHub](https://github.com/seanpm2001/<repoName>/discussions)
-
-No other resources at the moment.
-
-***
-
-## Contributing
-
-Contributing is allowed for this project, as long as you follow the rules of the `CONTRIBUTING.md` file.
-
-[Click/tap here to view the contributing rules for this project](CONTRIBUTING.md)
-
-***
-
-## About README
-
-File type: `Markdown (*.md)`
-
-File version: `0.1 (Sunday, March 21st 2021 at 7:50 pm)`
-
-Line count: `0,296`
-
-***
-
-## README version history
-
-Version 0.1 (Sunday, March 21st 2021 at 7:50 pm)
-
-> Changes:
-
-> * Started the file
-
-> * Added the title section
-
-> * Added the index
-
-> * Added the about section
-
-> * Added the Wiki section
-
-> * Added the version history section
-
-> * Added the issues section.
-
-> * Added the past issues section
-
-> * Added the past pull requests section
-
-> * Added the active pull requests section
-
-> * Added the contributors section
-
-> * Added the contributing section
-
-> * Added the about README section
-
-> * Added the README version history section
-
-> * Added the resources section
-
-> * Added a software status section, with a DRM free sticker and message
-
-> * Added the sponsor info section
-
-> * No other changes in version 0.1
-
-Version 1 (Coming soon)
-
-> Changes:
-
-> * Coming soon
-
-> * No other changes in version 1
-
-Version 2 (Coming soon)
-
-> Changes:
-
-> * Coming soon
-
-> * No other changes in version 2
-
-***
-
-### You have reached the end of the README file
-
-[Back to top](#Top) [Exit](https://github.com)
-
-### EOF
+V7Tags
 
 ***
